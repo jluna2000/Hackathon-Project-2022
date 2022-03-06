@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/static/scripting.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/static/styling.css">
     <title>YumYum</title>
 </head>
 <body>
+    
     <div id = "block1">
         <h1>
-            Test
+            YumYum
         </h1>
         <p>
             Please input the serial number of the product you wish to look up
@@ -28,7 +34,7 @@
                 </p>
                 <input type = "text" id = "ingr" name = "Ingredient">
                 <input type = "hidden" id = "demo" name = "AllIngredients">
-                <input type = "submit" value = "Submit">
+                <input type = "submit" class = "button" value = "Search">
             </form>
             <p>
                 {{ confirmation }}

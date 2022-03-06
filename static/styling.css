@@ -1,0 +1,52 @@
+h1{
+    font-family: 'Cabin', sans-serif;
+}
+
+p{
+    font-family: 'Cabin', sans-serif;
+}
+
+body{
+    background-color: #c9bb92;
+}
+#block1{
+    text-align: center;
+}
+#srnum{
+    height: 30px;
+    width: 200px;
+
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+
+    border-radius: 10px;
+    border: 2px solid #8e8c91;
+    background-color: rgba(255, 255, 255, 0);
+}
+    
+#ingr{
+    height: 30px;
+   
+    border: 2px solid #8e8c91;
+    background-color: rgba(255, 255, 255, 0);
+
+
+
+    width: 200px;
+    border-radius: 10px;
+
+
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+}
+.button{
+    background-color: transparent;
+    border: 0.0625rem solid #8e8c91;
+    color: #8e8c91;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: 25px;
+    width: 85px;
+    border-radius: 20px;
+}
