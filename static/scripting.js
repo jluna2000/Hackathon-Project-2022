@@ -1,3 +1,14 @@
+
+// app.py
+
+// This file is responsible for the communication between the server of this web application and the front end.
+// It receives data from the other files in this project to run the web application smoothly.
+
+// Jesse Luna Discord: moldybread Github: jluna2000
+// Eric Solorio Discord: solo408#4764 Github: ericsolorio
+// Julian Grado Discord: StillJulez#9752 Github: JulesFam42
+// Natalie Diaz Discord: nati#2538 Github: nataliediaz1
+
 function showInfo(product){
     var xhttp = new XMLHttpRequest();
     var method = "GET";

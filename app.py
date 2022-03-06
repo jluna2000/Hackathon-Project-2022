@@ -1,3 +1,13 @@
+#
+# app.py
+#
+# This file is responsible for the server of this web application.
+# It receives data from the other files in this project to run the web application smoothly.
+#
+# Jesse Luna Discord: moldybread Github: jluna2000
+# Eric Solorio Discord: solo408#4764 Github: ericsolorio
+# Julian Grado Discord: StillJulez#9752 Github: JulesFam42
+# Natalie Diaz Discord: nati#2538 Github: nataliediaz1
 from flask import Flask, render_template, request, url_for, redirect
 import json
 
