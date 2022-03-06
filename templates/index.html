@@ -14,12 +14,26 @@
             Test
         </h1>
         <p>
-            Please input the serial number of the product you want
+            Please input the serial number of the product you wish to look up
         </p>
         <div id = block2>
             <input type = "text" value = "Product" id = "srnum"/>
             <input type="button" class="button" id="srch" onclick="showInfo(document.getElementById('srnum').value)" value="Search"/>
-            <p id="demo"></p>
+            <p id="demoList"></p>
+        </div>
+        <div id = "block3">
+            <form action = "#" method = "post">
+                <p>
+                    Please input the ingredient you wish to search for in this product
+                </p>
+                <input type = "text" id = "ingr" name = "Ingredient">
+                <input type = "hidden" id = "demo" name = "AllIngredients">
+                <input type = "submit" value = "Submit">
+            </form>
+            <p>
+                {{ confirmation }}
+            </p>
+
         </div>
     </div>
 </body>

@@ -3,9 +3,23 @@ import json
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods=["POST", "GET"])
 def main():
-    return render_template("index.html")
+    confirmation = ""
+    if request.method == "POST":
+        ingre = request.form["Ingredient"]
+        fullDic = request.form["AllIngredients"]
+        # fullDic = "Hello World"
+        if ingre in fullDic:
+            confirmation = "Ingredient " + ingre + " was found in this product"
+        else:
+            confirmation = "Ingredient " + ingre + " was NOT found in this product"
+        print(confirmation)
+        print(fullDic)
+        # return redirect(url_for("testing"))
+        return render_template("index.html", confirmation=confirmation)
+    else:
+        return render_template("index.html")
 
 @app.route("/data", methods=["POST", "GET"])
 def ingredients():
@@ -15,10 +29,14 @@ def ingredients():
         stringOfIngredients = ""
         for i in range(len(fullInfo['product']['ingredients'])):
             stringOfIngredients = stringOfIngredients + fullInfo['product']['ingredients'][i]['text'] + "\n"
-        print(stringOfIngredients)
+        # print(stringOfIngredients)
         return str(stringOfIngredients)
     else:
         return redirect(url_for("main"))
+
+# @app.route("/data2electric")
+# def testing():
+#     return render_template("something.html")
 
 
 if __name__ == "__main__":

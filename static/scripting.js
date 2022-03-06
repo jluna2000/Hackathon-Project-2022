@@ -20,6 +20,7 @@ function getIngredients(fullInfo){
     var dicInfo = fullInfo;
     xhttp.send(JSON.stringify(dicInfo));
     xhttp.onload = function(){
-        document.getElementById("demo").innerHTML = this.responseText;
+        document.getElementById("demoList").innerHTML = this.responseText;
+        document.getElementById("demo").value = this.responseText;
     }
 }
