@@ -39,3 +39,14 @@ body{
     color:rgb(255, 255, 255);
     font-size: 15px;
 }
+.button{
+    background-color: transparent;
+    border: 0.0625rem solid #8e8c91;
+    color: #8e8c91;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: 25px;
+    width: 85px;
+    border-radius: 20px;
+}
