@@ -20,7 +20,10 @@ function getIngredients(fullInfo){
     var dicInfo = fullInfo;
     xhttp.send(JSON.stringify(dicInfo));
     xhttp.onload = function(){
-        document.getElementById("demoList").innerHTML = this.responseText;
+        a = this.responseText;
+        a = a.replace(/(\r\n|\n\r|\r|\n)/g, '<br>');
+        // str = str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+        document.getElementById("demoList").innerHTML = a;
         document.getElementById("demo").value = this.responseText;
     }
 }

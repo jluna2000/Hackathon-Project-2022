@@ -26,17 +26,13 @@ def ingredients():
     if request.method == "POST":
         fullInfo = request.get_json()
         fullInfo = json.loads(fullInfo)
-        stringOfIngredients = ""
+        stringOfIngredients = "Product: " + fullInfo['product']['product_name_en_imported'] + "\n"
         for i in range(len(fullInfo['product']['ingredients'])):
             stringOfIngredients = stringOfIngredients + fullInfo['product']['ingredients'][i]['text'] + "\n"
         # print(stringOfIngredients)
         return str(stringOfIngredients)
     else:
         return redirect(url_for("main"))
-
-# @app.route("/data2electric")
-# def testing():
-#     return render_template("something.html")
 
 
 if __name__ == "__main__":
