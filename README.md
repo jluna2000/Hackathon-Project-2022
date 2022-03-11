@@ -1,5 +1,5 @@
 # Hackathon-Project-2022
-A webpp to look at the ingredients of a certain food product. Created using the Dash framework and Python.
+A web app to look at the ingredients of a certain food product. Created using the Dash framework and Python.
 
 ## Features
 * User Input
